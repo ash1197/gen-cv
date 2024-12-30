@@ -659,3 +659,53 @@ input:checked+.slider:before {
 .product-card__best-buy {
     font-weight: 600;
 }
+
+/* Textarea styles */
+#spokenText {
+  width: 100%;
+  max-width: 600px;
+  min-height: 50px;
+  padding: 10px;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-top: 15px;
+  margin-bottom: 10px;
+  resize: none; /* Prevent resizing for consistent design */
+  outline: none;
+  transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+#spokenText:focus {
+  border-color: #0078d4; /* Match Microsoft blue */
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
+}
+
+/* Button styles */
+#askButton {
+  background-color: #0078d4; /* Microsoft blue */
+  color: white;
+  font-size: 16px;
+  font-family: 'Arial', sans-serif;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease-in-out, transform 0.1s ease-in-out;
+}
+
+#askButton:hover {
+  background-color: #005a9e; /* Darker blue for hover effect */
+}
+
+#askButton:active {
+  transform: scale(0.98); /* Slightly "pressed" effect */
+}
+
+#askButton:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 120, 212, 0.5);
+}
