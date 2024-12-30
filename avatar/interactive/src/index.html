@@ -58,7 +58,10 @@
         <button onclick="window.speak(`When will my order arrive?`)">
           When will my order arrive?
         </button>
+
       </div>
+      <textarea id="spokenText" class="spokenText" placeholder="Type your question here"></textarea>
+<button id="askButton" onclick="speakText()">Ask</button>
     </div>
 
     <div class="avatar-block">
@@ -99,6 +102,15 @@
       </div>
     </div>
   </div>
+  <script>
+    function speakText() {
+      // Get the value from the textarea
+      const text = document.getElementById('spokenText').value;
+  
+      // Call the window.speak function with the entered text
+      window.speak(text);
+    }
+  </script>
 </body>
 
 </html>
