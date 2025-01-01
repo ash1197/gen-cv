@@ -685,7 +685,7 @@ input:checked+.slider:before {
 
 /* Button styles */
 #askButton {
-  background-color: #0078d4; /* Microsoft blue */
+  background-color: #1C2833; /* Microsoft blue */
   color: white;
   font-size: 16px;
   font-family: 'Arial', sans-serif;
