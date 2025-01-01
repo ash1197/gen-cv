@@ -20,7 +20,7 @@ const IceServerUrl = "turn:relay.communication.microsoft.com:3478" // Fill your 
 let IceServerUsername
 let IceServerCredential
 
-const TalkingAvatarCharacter = "lisa"
+const TalkingAvatarCharacter = "ashish"
 const TalkingAvatarStyle = "graceful-standing"
 
 supported_languages = ["en-US", "de-DE", "zh-CN", "ar-AE"] // The language detection engine supports a maximum of 4 languages
