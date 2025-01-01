@@ -60,7 +60,7 @@
         </button>
 
       </div>
-      <textarea id="spokenText" class="spokenText" placeholder="Type your question here"></textarea>
+      <textarea id="spokenTextArea" class="spokenTextArea" placeholder="Type your question here"></textarea>
 <button id="askButton" onclick="speakText()">Ask</button>
     </div>
 
@@ -105,8 +105,8 @@
   <script>
     function speakText() {
       // Get the value from the textarea
-      const text = document.getElementById('spokenText').value;
-  
+      const text = document.getElementById('spokenTextArea').value;
+      document.getElementById('spokenTextArea').value='';
       // Call the window.speak function with the entered text
       window.speak(text);
     }
