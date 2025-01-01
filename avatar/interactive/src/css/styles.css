@@ -562,7 +562,7 @@ input:checked+.slider:before {
 .suggested-questions button {
     color: white;
     background: none;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 400;
     display: block;
     outline: 2px solid white;
