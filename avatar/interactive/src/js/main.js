@@ -20,8 +20,8 @@ const IceServerUrl = "turn:relay.communication.microsoft.com:3478" // Fill your 
 let IceServerUsername
 let IceServerCredential
 
-const TalkingAvatarCharacter = "am support assistant"
-const TalkingAvatarStyle = "graceful-sitting"
+const TalkingAvatarCharacter = "lisa"
+const TalkingAvatarStyle = "casual-sitting"
 
 supported_languages = ["en-US", "de-DE", "zh-CN", "ar-AE"] // The language detection engine supports a maximum of 4 languages
 
@@ -338,7 +338,7 @@ function addProductToChatHistory(product) {
   listItem.innerHTML = `
     <fluent-card class="product-card">
       <div class="product-card__header">
-        // <img src="${product.image_url}" alt="tent" width="100%">
+        
       </div>
       <div class="product-card__content">
         <div><span class="product-card__price">$${product.special_offer}</span> <span class="product-card__old-price">$${product.original_price}</span></div>
