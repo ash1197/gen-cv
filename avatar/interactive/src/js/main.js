@@ -21,7 +21,7 @@ let IceServerUsername
 let IceServerCredential
 
 const TalkingAvatarCharacter = "lisa"
-const TalkingAvatarStyle = "graceful-sitting"
+const TalkingAvatarStyle = "technical-standing"
 
 supported_languages = ["en-US", "de-DE", "zh-CN", "ar-AE"] // The language detection engine supports a maximum of 4 languages
 
