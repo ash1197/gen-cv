@@ -344,8 +344,7 @@ function addProductToChatHistory(product) {
         
       </div>
       <div class="product-card__content">
-        // <div><span class="product-card__price">$${product.special_offer}</span> <span class="product-card__old-price">$${product.original_price}</span></div>
-        // <div>${product.tagline}</div>
+        
       </div>
     </fluent-card>
   `;
