@@ -348,7 +348,7 @@ function addProductToChatHistory(product) {
       </div>
     </fluent-card>
   `;
-  list.appendChild(listItem);
+  //list.appendChild(listItem);
 }
 
 // Make video background transparent by matting
