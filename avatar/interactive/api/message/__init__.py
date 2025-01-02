@@ -243,6 +243,7 @@ def get_order_details(account_id):
     # Create a JSON object with the required details
     order_details = [
         {
+            "order_id": order.order_id,
             "product_name": order.product_name,
             "expected_delivery_date": (today + timedelta(days=order.days_to_delivery)).strftime('%Y-%m-%d')
         }
