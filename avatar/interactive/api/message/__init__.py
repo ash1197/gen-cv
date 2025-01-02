@@ -50,7 +50,7 @@ functions = [
     },
     {
         "name": "get_order_details",
-        "description": "Check customer account for expected delivery date of existing orders based on the provided parameters",
+        "description": "Check customer account for expected delivery date of existing orders based on the order_id, product_name and provided parameters",
         "parameters": {
             "type": "object",
             "properties": {
