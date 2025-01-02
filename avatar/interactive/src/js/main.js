@@ -155,6 +155,9 @@ async function generateText(prompt) {
   if (products.length > 0) {
     addProductToChatHistory(products[0]);
   }
+  console.log(generatedText);
+  console.log(products);
+  console.log(messages);
   return generatedText;
 }
 
