@@ -50,7 +50,7 @@ functions = [
     },
     {
         "name": "get_order_details",
-        "description": "Check customer account for expected delivery date of existing orders based on the order_id, product_name and provided parameters",
+        "description": "Check customer account for expected delivery date of existing orders based on the provided parameters",
         "parameters": {
             "type": "object",
             "properties": {
@@ -74,7 +74,7 @@ functions = [
                 },
                 "product_name": {
                     "type": "string",
-                    "description": "Name of the product to order (i.e., Elysian Voyager, Terra Roamer, AceMaster 3000, Server & Style)"
+                    "description": "Name of the product to order (i.e., Rebar, Sheet Metal, Hot Rolled Steel, Cold Rolled Steel)"
                 },
                 "quantity": {
                     "type": "number",
@@ -92,7 +92,7 @@ functions = [
             "properties": {
                 "user_question": {
                     "type": "string",
-                    "description": "User question (i.e., do you have tennis shoes for men?, etc.)"
+                    "description": "User question (i.e., do you have Cold Rolled Steel?, etc.)"
                 },
             },
             "required": ["user_question"],
