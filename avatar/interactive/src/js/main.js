@@ -155,9 +155,6 @@ async function generateText(prompt) {
   if (products.length > 0) {
     addProductToChatHistory(products[0]);
   }
-  console.log(generatedText);
-  console.log(products);
-  console.log(messages);
   return generatedText;
 }
 
@@ -341,14 +338,15 @@ function addProductToChatHistory(product) {
   listItem.innerHTML = `
     <fluent-card class="product-card">
       <div class="product-card__header">
-        
+        <img src="${product.image_url}" alt="tent" width="100%">
       </div>
       <div class="product-card__content">
-        
+        <div><span class="product-card__price">$${product.special_offer}</span> <span class="product-card__old-price">$${product.original_price}</span></div>
+        <div>${product.tagline}</div>
       </div>
     </fluent-card>
   `;
-  //list.appendChild(listItem);
+  list.appendChild(listItem);
 }
 
 // Make video background transparent by matting
