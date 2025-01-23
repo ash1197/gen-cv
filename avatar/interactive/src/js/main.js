@@ -150,14 +150,13 @@ async function generateText(prompt) {
       messages = data["messages"];
       products = data["products"]
     });
-
+  console.log(generatedText);
+  console.log(products);
+  console.log(messages);
   addToConversationHistory(generatedText, 'light');
   if (products.length > 0) {
     addProductToChatHistory(products[0]);
   }
-  console.log(generatedText);
-  console.log(products);
-  console.log(messages);
   return generatedText;
 }
 
