@@ -1,3 +1,4 @@
+
 import logging
 import os
 import json
@@ -368,26 +369,9 @@ def get_product_information(user_question, categories='*', top_k=1):
     if categories != '*':
         data["filter"] = f"category eq '{categories}'"
 
-    results = requests.post(url, headers=headers, data=json.dumps(data))
-    
-    # Log the response status and content
-    logging.info(f"Search API response status: {results.status_code}")
-    logging.info(f"Search API response content: {results.text}")
-
-    if results.status_code != 200:
-        logging.error(f"Failed to retrieve product information. HTTP Status code: {results.status_code}")
-        return json.dumps({"error": "Failed to retrieve product information"})
-
+    results = requests.post(url, headers=headers, data=json.dumps(data))    
     results_json = results.json()
     
-    # Log the parsed JSON response
-    logging.info(f"Parsed JSON response: {results_json}")
-
-    # Check if the 'value' key exists and has at least one item
-    if 'value' not in results_json or not results_json['value']:
-        logging.error("No product information found in the response")
-        return json.dumps({"error": "No product information found"})
-
     # Extracting the required fields from the results JSON
     product_data = results_json['value'][0] # hard limit to top result for now
 
@@ -398,10 +382,6 @@ def get_product_information(user_question, categories='*', top_k=1):
         "special_offer": product_data.get('special_offer'),
         "product_image_file": product_data.get('product_image_file'),
     }
-
-    # Log the final response data
-    logging.info(f"Final response data: {response_data}")
-
     return json.dumps(response_data)
 
 def chat_complete(messages, functions, function_call='auto'):
